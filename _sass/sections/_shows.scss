@@ -1,0 +1,50 @@
+[data-section="shows"] {
+
+}
+
+.show-cards {
+  display: flex;
+  margin-top: 40px;
+}
+
+.show-card {
+  border-right: 2px solid $gray-3;
+  flex: 1 1 50%;
+  font-size: 14px;
+  padding: 0 20px;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  > .show-image,
+  > .show-title,
+  > .show-airs-at,
+  > .show-description {
+    margin-bottom: 10px;
+  }
+
+  > .show-image {
+    width: 100%;
+  }
+
+  > .show-title {
+    @include lato-bold;
+    font-size: 22px;
+  }
+
+  > .show-airs-at {
+    @include lato-normal-italic;
+    color: $gray-text;
+  }
+
+  > .show-description {
+    min-height: 100px;
+    text-align: justify;
+  }
+
+  > .show-social {
+    color: $accent-yellow;
+    font-size: 32px;
+  }
+}

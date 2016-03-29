@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'BebasKai';
+  src:  url('fonts/bk.eot');
+  src:  url('fonts/bk.eot?#iefix') format('embedded-opentype'),
+        url('fonts/bk.woff2')      format('woff2'),
+        url('fonts/bk.woff')       format('woff'),
+        url('fonts/bk.ttf')        format('truetype');
+}
+
+@mixin bebas() {
+  font-family: BebasKai, sans-serif;
+}
+
+@mixin bebas-bold {
+  @include bebas;
+  font-weight: 700;
+}

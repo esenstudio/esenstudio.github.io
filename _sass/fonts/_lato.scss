@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic);
+
+@mixin lato() {
+  font-family: Lato, sans-serif;
+}
+
+@mixin lato-light() {
+  @include lato;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin lato-normal() {
+  @include lato;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin lato-normal-italic() {
+  @include lato;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin lato-bold() {
+  @include lato;
+  font-weight: 700;
+  font-style: normal;
+}

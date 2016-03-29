@@ -1,0 +1,33 @@
+[data-section="masthead"] {
+  background-image: url('/images/esen-bg.png');
+  background-position: 50% 50%;
+  background-repeat: none;
+  background-size: cover;
+
+  padding-top: 80px;
+  text-align: center;
+
+  > .section-content {
+    > .masthead-tagline {
+      @include lato-light;
+      font-size: 36px;
+      margin: 0 0 40px;
+    }
+
+    > .masthead-sub-tagline {
+      @include lato-bold;
+      font-size: 16px;
+      margin: 40px 0;
+    }
+
+    > .masthead-scroller {
+      @include lato-bold;
+      background: transparent;
+      border: 2px solid $accent-yellow;
+      border-radius: 30px;
+      color: $accent-yellow;
+      font-size: 18px;
+      padding: 10px 30px;
+    }
+  }
+}
