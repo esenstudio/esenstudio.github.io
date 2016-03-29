@@ -7,6 +7,16 @@
   padding-top: 80px;
   text-align: center;
 
+  > .chevron-down {
+    color: saturate($accent-yellow, 20%);
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+
   > .section-content {
     > .masthead-tagline {
       @include lato-light;
@@ -38,15 +48,5 @@
       }
     }
 
-    > .masthead-chevron {
-      color: saturate($accent-yellow, 20%);
-      font-size: 60px;
-      opacity: 0.3;
-      transition: opacity 0.2s linear;
-
-      &:hover {
-        opacity: 0.5;
-      }
-    }
   }
 }

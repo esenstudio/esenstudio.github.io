@@ -460,6 +460,11 @@ nav > .nav-content > .nav-links > a {
   background-size: cover;
   padding-top: 80px;
   text-align: center; }
+  [data-section="masthead"] > .chevron-down {
+    color: #ffb527;
+    opacity: 0.3; }
+    [data-section="masthead"] > .chevron-down:hover {
+      opacity: 0.5; }
   [data-section="masthead"] > .section-content > .masthead-tagline {
     font-family: Lato, sans-serif;
     font-weight: 300;
@@ -490,13 +495,6 @@ nav > .nav-content > .nav-links > a {
     [data-section="masthead"] > .section-content > .masthead-scroller:hover {
       background: #feb528;
       color: #282c36; }
-  [data-section="masthead"] > .section-content > .masthead-chevron {
-    color: #ffb527;
-    font-size: 60px;
-    opacity: 0.3;
-    transition: opacity 0.2s linear; }
-    [data-section="masthead"] > .section-content > .masthead-chevron:hover {
-      opacity: 0.5; }
 
 .show-cards {
   display: flex;
