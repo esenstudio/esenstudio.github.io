@@ -12,6 +12,7 @@ nav > .nav-content {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
   height: 80px;
   line-height: 80px;
 }
@@ -27,7 +28,7 @@ nav > .nav-content > .nav-links {
 
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 20px;
 }
 
 nav > .nav-content > .nav-links > a {

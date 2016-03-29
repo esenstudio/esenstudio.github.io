@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <title>ESEN Studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/esen.css" type="text/css" rel="stylesheet">
   </head>
@@ -12,13 +13,13 @@
     <div class="nav-links">
       <a href="#shows">Shows</a>
       <a href="#people">People</a>
-      <a href="#about_us">About Us</a>
+      <a href="#about-us">About Us</a>
       <a href="#connect">Connect</a>
     </div>
   </div>
 </nav>
 
-    <section data-section="masthead">
+    <section data-section="masthead" id="masthead">
   <div class="section-content">
     <h1 class="masthead-tagline">
       Gaming media production with bold, fresh ideas.
@@ -28,14 +29,25 @@
       in Stockholm, Sweden.<br>
       We produce media and gaming content for a wide audience.
     </p>
-    <button class="masthead-scroller">
+    <a class="masthead-scroller" href="#shows">
       Learn more about ESEN
-    </button>
+    </a>
+    <br>
+    <a class="masthead-chevron" href="#shows">
+      <i class="fa fa-chevron-down"></i>
+    </div>
   </div>
 </section>
 
-    <section data-section="shows">
-  <a name="shows"></a>
+    <section data-section="shows" id="shows">
+
+  <a href="#" class="chevron chevron-up">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+  <a href="#people" class="chevron chevron-down">
+    <i class="fa fa-chevron-down chevron chevron-down"></i>
+  </a>
+
   <div class="section-content">
     <header class="section-header">
       Our current broadcast lineup
@@ -108,8 +120,15 @@
   </div>
 </section>
 
-    <section data-section="people">
-  <a name="people"></a>
+    <section data-section="people" id="people">
+
+  <a href="#" class="chevron chevron-up">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+  <a href="#about-us" class="chevron chevron-down">
+    <i class="fa fa-chevron-down chevron chevron-down"></i>
+  </a>
+
   <div class="section-content">
     <header class="section-header">
       Meet the team
@@ -117,8 +136,15 @@
   </div>
 </section>
 
-    <section data-section="about-us">
-  <a name="about_us"></a>
+    <section data-section="about-us" id="about-us">
+
+  <a href="#" class="chevron chevron-up">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+  <a href="#connect" class="chevron chevron-down">
+    <i class="fa fa-chevron-down chevron chevron-down"></i>
+  </a>
+
   <div class="section-content">
     <header class="section-header">
       We live for the camera.
@@ -126,8 +152,12 @@
   </div>
 </section>
 
-    <section data-section="connect">
-  <a name="connect"></a>
+    <section data-section="connect" id="connect">
+
+  <a href="#" class="chevron chevron-up">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+
   <div class="section-content">
     <header class="section-header">
       We'd love to work with you.
@@ -136,5 +166,6 @@
 </section>
 
 
+    <script src="javascript/scroll.js"></script>
   </body>
 </html>

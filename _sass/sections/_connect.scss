@@ -1,4 +1,8 @@
-[data-section="connect"] {
+#connect {
   background: $off-white;
   color: $gray-2;
+
+  > .chevron {
+    color: $gray-2;
+  }
 }

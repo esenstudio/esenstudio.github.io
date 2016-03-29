@@ -18,14 +18,37 @@ a[name] {
 section {
   position: relative;
   min-height: 100%;
+  padding: 50px 0;
   display: flex;
   align-items: center;
+}
+
+section > .chevron {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  color: $off-white;
+  font-size: 60px;
+  opacity: 0.05;
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 0.2;
+  }
+}
+section > .chevron-up {
+  top: -5px;
+}
+
+section > .chevron-down {
+  bottom: 0px;
 }
 
 section > .section-content {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 section > .section-content > .section-header {

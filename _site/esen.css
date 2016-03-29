@@ -385,13 +385,32 @@ a[name] {
 section {
   position: relative;
   min-height: 100%;
+  padding: 50px 0;
   display: flex;
   align-items: center; }
+
+section > .chevron {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  color: #ecf0f3;
+  font-size: 60px;
+  opacity: 0.05;
+  transition: opacity 0.2s linear; }
+  section > .chevron:hover {
+    opacity: 0.2; }
+
+section > .chevron-up {
+  top: -5px; }
+
+section > .chevron-down {
+  bottom: 0px; }
 
 section > .section-content {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 20px; }
 
 section > .section-content > .section-header {
   font-size: 28px;
@@ -410,6 +429,7 @@ nav > .nav-content {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
   height: 80px;
   line-height: 80px; }
 
@@ -420,10 +440,11 @@ nav > .nav-content > .nav-logo {
 nav > .nav-content > .nav-links {
   font-family: BebasKai, sans-serif;
   font-weight: 700;
+  letter-spacing: 0.03em;
   font-size: 24px;
   position: absolute;
   top: 0px;
-  right: 0px; }
+  right: 20px; }
 
 nav > .nav-content > .nav-links > a {
   color: #fff;
@@ -449,18 +470,33 @@ nav > .nav-content > .nav-links > a {
     font-family: Lato, sans-serif;
     font-weight: 700;
     font-style: normal;
+    letter-spacing: 0.02em;
     font-size: 16px;
     margin: 40px 0; }
   [data-section="masthead"] > .section-content > .masthead-scroller {
     font-family: Lato, sans-serif;
     font-weight: 700;
     font-style: normal;
+    letter-spacing: 0.02em;
     background: transparent;
     border: 2px solid #feb528;
     border-radius: 30px;
     color: #feb528;
+    display: inline-block;
     font-size: 18px;
-    padding: 10px 30px; }
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: background 0.2s linear, color 0.2s linear; }
+    [data-section="masthead"] > .section-content > .masthead-scroller:hover {
+      background: #feb528;
+      color: #282c36; }
+  [data-section="masthead"] > .section-content > .masthead-chevron {
+    color: #ffb527;
+    font-size: 60px;
+    opacity: 0.3;
+    transition: opacity 0.2s linear; }
+    [data-section="masthead"] > .section-content > .masthead-chevron:hover {
+      opacity: 0.5; }
 
 .show-cards {
   display: flex;
@@ -484,6 +520,7 @@ nav > .nav-content > .nav-links > a {
     font-family: Lato, sans-serif;
     font-weight: 700;
     font-style: normal;
+    letter-spacing: 0.02em;
     font-size: 22px; }
   .show-card > .show-airs-at {
     font-family: Lato, sans-serif;
@@ -500,6 +537,8 @@ nav > .nav-content > .nav-links > a {
 [data-section="people"] {
   background: #393f4f; }
 
-[data-section="connect"] {
+#connect {
   background: #ecf0f3;
   color: #282c36; }
+  #connect > .chevron {
+    color: #282c36; }

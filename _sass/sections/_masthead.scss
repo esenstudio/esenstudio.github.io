@@ -26,8 +26,27 @@
       border: 2px solid $accent-yellow;
       border-radius: 30px;
       color: $accent-yellow;
+      display: inline-block;
       font-size: 18px;
       padding: 10px 30px;
+      text-decoration: none;
+      transition: background 0.2s linear, color 0.2s linear;
+
+      &:hover {
+        background: $accent-yellow;
+        color: $gray-2;
+      }
+    }
+
+    > .masthead-chevron {
+      color: saturate($accent-yellow, 20%);
+      font-size: 60px;
+      opacity: 0.3;
+      transition: opacity 0.2s linear;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }
